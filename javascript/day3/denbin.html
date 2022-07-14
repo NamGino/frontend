@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .speace{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <span id="energy"></span>
+    <button onclick="On()">ON</button>
+    <button onclick="Off()">Off</button>
+</body>
+<script>
+    var battery = function(){
+        this.setEnergy = function(energy){
+            this.energy = energy;
+        };
+        this.getEnergy = function (){
+            return this.energy;
+        };
+        this.decreaseEnergy = function(){
+            if(this.energy>0){ 
+                this.energy--;
+            }
+            else{
+                alert("energy is out");
+            }
+        };      
+    };
+     var flashlamp = function (){
+         this.setBattery = function(Battery){
+             this.Battery = Battery;
+         };
+         this.getBatteryInfo = function(){
+            return this.Battery.getEnergy();
+         };
+         this.turnOn = function(){
+            if(Battery.getEnergy()>0){
+                alert('Lighting');
+            };
+            this.Battery.decreaseEnergy();
+         };
+         this.turnOff = function(){
+            alert('No lighting');
+         };
+    };
+    var Battery = new battery();
+    Battery.setEnergy(10); 
+
+    var flashLamp = new flashlamp();
+    flashLamp.setBattery(Battery);
+    flashLamp.getBatteryInfo();
+
+    function On(){ 
+        flashLamp.turnOn();
+    }
+    function Off(){
+        flashLamp.turnOff();}
+    
+
+</script>
+</html>

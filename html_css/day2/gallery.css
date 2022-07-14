@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.gallery-box{
+    float: left;
+    margin: 0 3px;
+    text-align: center;
+    width: 24%;
+}
+.gallery-box img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .gallery-box{
+        width: 100%;
+    }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+    .gallery-box{
+        width: 49%;
+    }
+}
+@media (min-width: 992px) and (max-width:1200) {
+    .gallery-box{
+        width: 25%;
+    }
+}

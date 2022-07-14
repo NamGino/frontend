@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuajs</title>
+</head>
+<style>
+    .box{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        position: relative;
+    }
+    .box2{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog{
+        width: 22%;
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+    .title{
+        color: aqua;
+        font-weight: 700;
+    }
+</style>
+<body>
+    <header><h1>sleep</h1></header>
+    <div class="blogg"><p>kjnbdjjdfjvdhjvdhvbdvbjhfbdjbvjhbdfvjhbfdjvbdfvjhbfdhjvfvbdvjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p></div>
+    <div id="app">
+        <div v-bind:style="obj">
+        <h1>{{say('my name is NamGino')}}</h1>
+        <a style="text-decoration:none;" v-bind:href="url">{{title}}</a>
+        <!-- template Syntax     -->
+        <div class="pricee">{{formatPrice()}}</div>
+        <h1>count: {{counter}}</h1>
+        <button v-on:click="count()">click me</button>
+        <div class="box" v-on:mousemove="client">
+            <p>clientX: {{clientX}}</p>
+            <p>clientY: {{clientY}}</p>
+            <div class="box2" v-on:mousemove.stop ="clientchild">
+            </div>
+        </div>
+        <form action="sever.php" v-on:click.prevent="onsubmit">
+            <label for="">nhap first Name</label>
+            <input type="text" name="firstname"><br>
+            <label for="">nhap Email</label>
+            <input type="email" name="email"><br>
+            <input type="submit" value="dang nhap">
+        </form>
+        <button v-on:click="number++">number+1</button>
+        <button v-on:click="A++">A+1</button>
+        <p>
+            A = {{addA}}
+        </p>
+        <button v-on:click="B++">B+1</button>
+        <p>
+            B = {{addB}}
+        </p>
+
+        <h1>Name = {{name}}</h1>
+        <input v-model="name" type="text" >
+
+        <div class="list" >
+            <div v-for="blog in listblog" class="blog">
+                <div class="title">{{blog.title}}</div>
+                <div class="content">
+                    {{blog.body}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+    <script src="begin.js"></script>
+</body>
+</html>

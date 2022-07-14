@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Em có yêu anh hông :3</h1>
+    <form>
+        <b>viết câu trả lời vào đây
+        </b>
+        <label>
+        <textarea cols="30" rows="5" id="txt"></textarea>
+        </label>
+        </form>
+<script>
+let array = [];
+let str = "";
+array[1] ='E';
+array[2] ='M';
+array[3] =' ';
+array[4] ='C';
+array[5] ='Ó';
+array[6] =' ';
+array[7] ='Y';
+array[8] ='Ê';
+array[9] ='U';
+array[10] =' ';
+array[11] ='A';
+array[12] ='N';
+array[13] ='H';
+array[14] =' ';
+array[15] ='<';
+array[16] ='3';
+window.onload = function(){
+    fake();
+}
+function fake()
+{
+let text = document.getElementById("txt").value;
+let j = text.length;
+if (j > 0)
+{
+for(let i = 1; i <= j; i++)
+{
+str = str + array[i];
+if (i === 17)
+{
+document.getElementById("txt").value= "";
+str = "";
+}
+}
+}
+document.getElementById("txt").value = str;
+str = "";
+setTimeout("fake()", 1);
+}
+</script>
+</body>
+</html>

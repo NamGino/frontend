@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.container{
+	position: absolute;
+	width: 600px;
+	border: 5px solid black;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.playerturn,.notired,.notiblue{
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index:1;
+	margin: 10px 0;
+	color: red;
+}
+.notired{
+	color: red !important;
+}
+
+.notiblue{
+	color: blue !important;
+}
+
+.box{
+	width: 30px;
+	height: 30px;
+}
+
+.clickX,.clickO{
+	position: relative;
+}
+.clickX:before,.clickX:after{
+	content: "";
+	position: absolute;
+	top: 45%;
+	left: 4%;
+	width: 23px;
+	height: 3px;
+	background-color: red;
+}
+.clickX:after{
+	transform: rotate(45deg);
+}
+.clickX:before{
+	transform: rotate(-45deg);
+}
+
+.clickO::before{
+	content: "";
+	position: absolute;
+	border: 3px solid blue;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.content{
+	position: relative;
+	padding: 0px 0;
+}
+.bgwin{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,.9);
+	height: 100vh;
+	z-index: 2;
+	text-align: center;
+	display: none;
+}
+
+.bgwin h1{
+	margin-top: 40vh;
+	font-size: 100px;
+}
+.bgwin button{
+	display: inline-block;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	margin-top: 30vh;
+	font-size: 20px;
+	color: orangered;
+	transition: all .3s;
+}
+.bgwin button:hover{
+	transform: translateY(-3px);
+}
+.bgwin button:active{
+	transform: translateY(-1px);
+	outline: none;
+}
+.win{
+	display: block
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div> title is : {{title}}</div>
+        <p>countnumber = {{countnumber}}</p>
+        <button v-on:click="countnumber+=10">bam de</button>
+
+        <h1>doc: {{doc}}</h1>
+        <input v-model="doc" type="text">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+    <script src="practice.js"></script>
+</body>
+</html>

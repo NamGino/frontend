@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mở đầu</title>
+    <style>
+        *{
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+        main{
+            font: 1em sans-serif;
+        }
+        .head{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 5px;
+            top: 0;
+            position: relative;
+        }
+        .head input{
+            width: 70%;
+            margin-top: 4.5px;
+            border-radius: 5px;
+        }
+        .search{
+            width: 50%;
+            background-color: orange;
+            float:right;
+            height: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .head-link{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            margin-top: 5px;
+            position: relative;
+            top: 0;
+        }
+        .head-link ul{
+            margin:0;
+			padding: 0;
+			overflow: hidden;
+            background-color: gray;
+        }
+
+        .head-link li{
+            display: block;
+            float: left;
+            padding: 14px 16px;
+        }
+        .head-link li:hover{
+			color: white;
+            background-color: orange;
+        }
+        .giua{
+            max-width: 100%;
+            text-align: center;
+            margin-top: 5px;
+            position: relative;
+            height: 100%;
+        }
+        .left{
+            width: 15%;
+            float: left;
+            height: 100%;
+			text-align: center;
+            position: relative;
+            top: 0px;
+        }
+        .left ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .left li .item-left:hover{
+            background-color: gray;
+            color: white;
+        }
+        .top{
+            background-color: crimson;
+        }
+        .item-left{
+            margin: 0;
+            padding: 5px;
+            background-color: beige;
+            transition: 0.1s ;
+        }
+        .item-left :hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .content{
+            width: 83.06%;
+            height: 700px;
+            margin-left: 5px;
+            float: left;
+        }
+        .item{
+			margin: 10px 12px 20px 15px;
+            height: 210px;
+			width: 170.5px;
+			float: left;
+		}
+        .item img{
+            margin: 0;
+        }
+        .item button{
+            background-color: black;
+            color: white;
+            width: 170.5px;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            cursor: pointer;
+        }
+        .item h5{
+            padding: 5px;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="head">
+            <img src="horror.jpg" height="100px" style="float: left ;">
+            <div class="search"><input type="text" placeholder="tìm kiếm...">TÌM KIẾM CHUYỆN</div>
+        </div>
+        <div class="head-link">
+            
+            <ul>
+                <li><span>Top</span> </li>
+                <li><span>Mid</span> </li>
+                <li><span>Junger</span> </li>
+                <li><span>Ad Carry</span> </li>
+                <li><span>Support</span> </li>
+            </ul>
+        </div>
+        <div class="giua">
+            <div class="left">
+                <div class="top">Phân Loại</div>
+                <ul>
+                    <a href="day1_1.html"><li><h5 class="item-left">Hoạt Hình</h5></li></a>
+                    <a href="day1_2.html"><li><h5 class="item-left">Ngôn tình</h5></li></a>
+                    <a href="day1_3.html"><li><h5 class="item-left">Kinh dị</h5></li></a>
+                    <a href="day1_4.html"><li><h5 class="item-left">Viễn tưởng</h5></li></a>
+                </ul>
+          </div>
+            <div class="content">
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>I</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>Got</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>Strength</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>From</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>Your</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>Fear</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>HA</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>HA</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>HA</h5></button></div>
+                <div class="item"><img src="it.jpg" width="100%" style="float: left ;height: 210px"><button><h5>HA</h5></button></div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
